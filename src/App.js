@@ -5,8 +5,8 @@ function App() {
     <div className="container">
       <header className="App-header">
       <h1>Advance React</h1>
-        <UseStateExample/>
-        {/* <UseStateBasic/> */}
+        {/* <UseStateExample/> */}
+        <UseStateBasic/>
       </header>
     </div>
   );
