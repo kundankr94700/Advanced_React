@@ -19,6 +19,7 @@ function UseStateObject() {
 
         setperson({...person,message:"new Message"})
     }
+    
     const changeText=()=>{
         setMessage("I am Super Hero")
     }

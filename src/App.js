@@ -1,6 +1,7 @@
 import React from "react";
 import UseStateArray from "./Tutorial/UseStateArray";
-import UseStateBasic from "./Tutorial/UseStateBasic"; import UseStateExample from "./Tutorial/useStateExample";
+import UseStateBasic from "./Tutorial/UseStateBasic";import UseStateCounter from "./Tutorial/UseStateCounter";
+ import UseStateExample from "./Tutorial/useStateExample";
 import UseStateObject from "./Tutorial/UseStateObject";
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
         {/* <UseStateExample/> */}
         {/* <UseStateBasic/> */}
         {/* <UseStateArray/> */}
-        <UseStateObject/>
+        {/* <UseStateObject/> */}
+        <UseStateCounter/>
       </header>
     </div>
   );
