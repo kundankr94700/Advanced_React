@@ -10,6 +10,7 @@ function Forms() {
     // const [email,setEmail]=useState('kk@gmail')// 
     const [name,setName]=useState('')    //
     const [email,setEmail]=useState('')
+    
     const [person,setPerson]=useState([])
     const handleSubmit=(e)=>
     {
@@ -20,11 +21,14 @@ function Forms() {
         if(name && email)
         {
             //const people={name:name,email:email}
-            const people={name,email}
+            const people={id:new Date().getTime().toString(),name,email}
             console.log(people);
             //person.push(people)
             setPerson(person=>{return [...person,people]})
             console.log(person);
+        }
+        else{
+            alert('Must Enter Fields')
         }
     }
     const firstName=(event)=>{
@@ -34,6 +38,7 @@ function Forms() {
         <>
            <article>
                <form className='form' onSubmit={handleSubmit}>
+            
                <div className='form-control'>
                    <label htmlFor='firstName'>Name:</label>
                    <input type='text' id='firstname' name='firstname' value={name} onChange={(e)=>setName(e.target.value)}></input> {/*if you assign value you can change the value without onChange*/}
@@ -44,6 +49,22 @@ function Forms() {
                </div>
                <button type='submit'>Submit</button>
                </form>
+               {
+                   person.map((people,index)=>{
+                   const {id,name,email}=people;
+                   return (
+                       <div className='item' key={id} >
+                           <h4>{name}</h4>
+                           <p>{email}</p>
+                       </div>
+                   );
+                   
+                })
+               }
+               {/* {
+                   person.map((x)=>{return(<div className="item"><h4 >{x.name}</h4><p>{x.email}</p></div>)})  // another way
+               } */}
+               
                
            </article>
         </>
