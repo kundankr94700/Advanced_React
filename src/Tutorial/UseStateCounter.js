@@ -28,7 +28,7 @@ function UseStateCounter() {
         },1000)
     }
     const stopwatch=(i)=>{
-        var id=setInterval(()=>{
+        setInterval(()=>{
            //setValue(value+1)  //not works
             
            //setValue((pre)=>pre+1) not work with intervals

@@ -1,4 +1,5 @@
 import React from "react";
+import UseEffectsBasics from "./Tutorial/UseEffectsBasics";
 import UseStateArray from "./Tutorial/UseStateArray";
 import UseStateBasic from "./Tutorial/UseStateBasic";import UseStateCounter from "./Tutorial/UseStateCounter";
  import UseStateExample from "./Tutorial/useStateExample";
@@ -12,7 +13,8 @@ function App() {
         {/* <UseStateBasic/> */}
         {/* <UseStateArray/> */}
         {/* <UseStateObject/> */}
-        <UseStateCounter/>
+        {/* <UseStateCounter/> */}
+        <UseEffectsBasics/>
       </header>
     </div>
   );
