@@ -10,14 +10,22 @@ function Forms() {
     // const [email,setEmail]=useState('kk@gmail')// 
     const [name,setName]=useState('')    //
     const [email,setEmail]=useState('')
+    const [person,setPerson]=useState([])
     const handleSubmit=(e)=>
     {
         e.preventDefault();
-        var firstname=document.getElementById('firstname').value;   //one way 
-        var emailaddress=document.getElementById('email').value;
+        // var firstname=document.getElementById('firstname').value;   //one way 
+        // var emailaddress=document.getElementById('email').value;
         
-        console.log(firstname);
-        console.log(email);
+        if(name && email)
+        {
+            //const people={name:name,email:email}
+            const people={name,email}
+            console.log(people);
+            //person.push(people)
+            setPerson(person=>{return [...person,people]})
+            console.log(person);
+        }
     }
     const firstName=(event)=>{
         setName(event.target.value)
