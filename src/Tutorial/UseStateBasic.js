@@ -6,8 +6,14 @@ function UseStateBasic() {
     console.log(useState('Neeraj'));
     const handleClick=()=>
     {
+        if(day==='Today is a bright and beautiful Day')
+        {
+            setDay('"Today is a Rainy Day"')
+            setDay2('Today is Good Time')
+        }
+        else{
         setDay("Today is a bright and beautiful Day")
-        setDay2('Today is Beautiful Time')
+        setDay2('Today is Beautiful Time')}
     }
     return (
         <div>

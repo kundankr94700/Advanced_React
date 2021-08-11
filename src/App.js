@@ -1,4 +1,5 @@
 import React from "react";
+import UseStateArray from "./Tutorial/UseStateArray";
 import UseStateBasic from "./Tutorial/UseStateBasic"; import UseStateExample from "./Tutorial/useStateExample";
 function App() {
   return (
@@ -6,7 +7,8 @@ function App() {
       <header className="App-header">
       <h1>Advance React</h1>
         {/* <UseStateExample/> */}
-        <UseStateBasic/>
+        {/* <UseStateBasic/> */}
+        <UseStateArray/>
       </header>
     </div>
   );
