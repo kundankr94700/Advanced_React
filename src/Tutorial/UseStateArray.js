@@ -15,7 +15,7 @@ function UseStateArray() {
                    return(
                        <div key={id} classname='item'>
                            <h4>{name}</h4>
-                           <button onClick={()=>removeItem(id)}>Remove him</button>
+                           <button className='btn' onClick={()=>removeItem(id) }>Remove him</button>
                        </div>
 
                    );
@@ -24,6 +24,20 @@ function UseStateArray() {
             }
             <h2>Use State is in action</h2>
             <button className='btn' onClick={()=>setPeople([])}>Clear Name</button>
+            <button className='btn' onClick={()=>{const newPeople=[]
+                people.map(x=>{
+                if(x.id==3)
+                {
+                    console.log(x.name);
+                }
+                else{
+                    newPeople.push(x)
+                }
+            })
+            setPeople(newPeople)}
+            
+            }>Delete</button>
+
         </>
     )
 }
