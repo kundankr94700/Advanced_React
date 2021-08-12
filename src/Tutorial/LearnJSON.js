@@ -22,7 +22,7 @@ function LearnJSON() {
 axios.get('http://localhost:4000/user').then(users=>{
     //console.log(users);
    setList(users['data'])
-    console.log(users['data']);
+    //console.log(users['data']);
 })   //getting data from json server
     }
     return (
