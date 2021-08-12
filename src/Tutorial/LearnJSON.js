@@ -3,22 +3,28 @@ import React from 'react'
 import Forms from './Forms'
 
 function LearnJSON() {
-    const handleClick=()=>
-    {
-        const promise=axios.post('http://localhost:4000/users',{
-            name:'Nishant',
-            
-
-        })}
-        const getUsers=()=>
-        {
-
+    const handleClick=(b)=>{
+        const promise=axios.post('http://localhost:4000/user',
+        { name:'Rakesh' },
+            {       
+            headers:{['contect-type']:'application/json' }
         }
+        )
+        promise.then(response=>{
+            console.log(response);
+        })
+        promise.catch(e=>console.log(e))
+        console.log(b);
+    }
+    const getUser=()=>
+    {
+
+    }
     return (
         <>
-            <button type='button' className='btn' onClick={handleClick}>Send Data</button>
-            <button type='button' className='btn' onClick={getUsers}>getUser</button>
-            
+        <h2>Random Text</h2>
+        <button type="button" className='btn' onClick={handleClick}>Post User</button>
+        <button type="button" className='btn' onClick={getUser}>Get User</button>
         </>
     )
 }

@@ -49,7 +49,7 @@ function ToDo() {
                 {
                     list.map((x) => {
                         return (
-                            <div className='item' key={x.id}>
+                            <div className='item' style={{border:'2px solid green'}} key={x.id}>
                                 <h3>{x.events}    </h3>
                                 <h5>{x.date} {x.time} </h5>
                                 <button className='btn' onClick={() => removeEvent(x.id)}>Remove</button>

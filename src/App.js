@@ -19,9 +19,9 @@ function App() {
         {/* <UseStateCounter/> */}
         {/* <UseEffectsBasics/> */}
         {/* <Forms/> */}
-        <ToDo/>
+        {/* <ToDo/> */}
 
-        {/* <LearnJSON/> */}
+        <LearnJSON/>
       </header>
     </div>
   );
