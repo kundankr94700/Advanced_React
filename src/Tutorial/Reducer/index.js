@@ -5,11 +5,13 @@ import {data} from "../Data"
 function Index() {
     const [name,setName]=useState('')
     const [people,setPeople]=useState(data)
-    const [showModal,setModal]=useState(false)
+    const [showModal,setModal]=useState(true)
     const handleSubmit=(e)=>
     {
         e.preventDefault();
-        alert(name)
+        if(showModal){
+            setPeople([...people,{id:new Date().getTime().toString(),name}]) //we have created a program where we are takinh value from user and displaying the same
+        }
     }
     return (
         <>
@@ -20,7 +22,14 @@ function Index() {
             </div>
             <button type='submit' className='btn'>Submit</button>
         </form>
-            <Modal/>
+        {
+            people.map(x=>{
+                return <>
+                <div className="item" key={x.id}><h4>{x.name}</h4></div>
+                </>
+            })
+        }
+        
         </>
     )
 }
