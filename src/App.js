@@ -1,6 +1,7 @@
 import React from "react";
 import Forms from "./Tutorial/Forms";
 import LearnJSON from "./Tutorial/LearnJSON";
+import Index from "./Tutorial/Reducer";
 import ToDo from "./Tutorial/ToDo";
 import UseEffectsBasics from "./Tutorial/UseEffectsBasics";
 import UseStateArray from "./Tutorial/UseStateArray";
@@ -20,8 +21,8 @@ function App() {
         {/* <UseEffectsBasics/> */}
         {/* <Forms/> */}
         {/* <ToDo/> */}
-
-        <LearnJSON/>
+        {/* <LearnJSON/> */}
+        <Index/>
       </header>
     </div>
   );
