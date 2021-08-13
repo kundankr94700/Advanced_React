@@ -1,0 +1,21 @@
+export const Links=[{
+    lin:'/people',
+    name:'People'
+},
+{
+    lin:'/',
+    name:'Home'
+},
+{
+    lin:'/about',
+    name:'About'
+},
+{
+    lin:'/person',
+    name:'Person'
+},
+{
+    lin:'/people',
+    name:'People'
+},
+]

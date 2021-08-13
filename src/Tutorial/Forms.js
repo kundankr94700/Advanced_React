@@ -31,9 +31,9 @@ function Forms() {
             alert('Must Enter Fields')
         }
     }
-    const firstName=(event)=>{
-        setName(event.target.value)
-    }
+    // const firstName=(event)=>{
+    //     setName(event.target.value)   //another way
+    // }
     return (
         <>
            <article>
