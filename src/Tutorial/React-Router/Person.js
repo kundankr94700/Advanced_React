@@ -11,7 +11,7 @@ function Person() {
     },[])
     console.log(id);
     return (
-        <div><h3>{name}</h3>
+        <div><h3>Welcome {name}</h3>
             <a href='/people'><button className='btn'>Back to People</button></a>
         </div>
     )
