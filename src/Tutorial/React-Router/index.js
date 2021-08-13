@@ -22,8 +22,9 @@ function ReactRouterDom() {
             <Route path='/People'>
                 <People/>
             </Route>
-            <Route path='/Person/:id' children={<Person/>}>
-            </Route>
+            
+            <Route path='/Person/:id' children={<Person/>}/>
+            
             <Route path='*'>
                 <Error/>
             </Route>

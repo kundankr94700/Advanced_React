@@ -5,7 +5,7 @@ import {Links} from '../Links'
 function NavBar() {
     const [myLink,setLinks]=React.useState(Links)
     return (
-        <div className='item' style={{width:100,height:50,alignItems:'center',marginRight:'4rem' , marginTop:'4rem'}}>
+        <div className='item' style={{width:100,height:50,alignItems:'center'  , marginLeft:'300px'}}>
             {
                 myLink.map(x=>{
                     return(
@@ -15,6 +15,7 @@ function NavBar() {
                         </div>)
                 })
             }
+            <br></br>
             
         </div>
     )
